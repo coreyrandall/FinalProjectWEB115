@@ -46,8 +46,8 @@ function generateMealPlan() {
                         Snack 1: ${meals[day].snack1}<br>
                         Lunch: ${meals[day].lunch}<br>
                         Snack 2: ${meals[day].snack2}<br>
-                        Dinner: ${meals[day].dinner}
-                    </li>
+                        Dinner: ${meals[day].dinner}<br>
+                    </li><br>
                 `).join('')}
             </ul>
 
