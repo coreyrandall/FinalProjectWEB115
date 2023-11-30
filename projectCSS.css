@@ -1,4 +1,3 @@
-/* Reset some default browser styles */
 body, h1, h2, h3, p, input, button {
     margin: 0;
     padding: 0;
@@ -6,33 +5,87 @@ body, h1, h2, h3, p, input, button {
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f5f5f5;
-    color: #333;
+    background-color: black;
+    color: white;
+    background-image: url('media/pexels-ella-olsson-1640777.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
 }
 
 .banner {
-    background-color: #4CAF50;
-    color: #fff;
+    background-color: black;
+    color: white;
     text-align: center;
     padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.banner h2 {
+    font-size: 3em;
+}
+
+.logo {
+    background-color: black;
+    max-width: 350px;
+    margin-right: 20px;
+}
+
+.banner_text {
+    background-color: black;
+    text-align: left;
 }
 
 form {
-    max-width: 800px;
-    margin: 20px auto;
-    background-color: #fff;
-    padding: 20px;
+    max-width: 100%;
+    margin: 10px auto;
+    border-color: black;
+    padding: 10px;
+    color: black;
+}
+
+.userInfo {
+    float: left;
+}
+
+.days_container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+}
+
+.day {
+    background-color: white;
+    padding: 5px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
+    color: black;
 }
 
 input {
+    width: 350px;
+    padding: 8px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+.day label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: black;
+}
+
+.day input {
     width: 100%;
     padding: 8px;
     margin-bottom: 15px;
@@ -40,16 +93,15 @@ input {
 }
 
 button {
-    background-color: #4CAF50;
+    background-color: black;
     color: #fff;
-    padding: 10px 15px;
-    border: none;
+    padding: 30px 20px;
+    border: white;
     border-radius: 4px;
     cursor: pointer;
+    float:right;
 }
 
 button:hover {
-    background-color: #45a049;
+    background-color: green;
 }
-
-/* Add more styles as needed */
